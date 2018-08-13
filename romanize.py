@@ -19,7 +19,8 @@
 
 def romanize(num):
     for index, value in enumerate(str(num)):
-        print(index, value)
+        unit = 10 ** (3 - index)
+        print(unit, value)
 
 
 romanize(3000)
