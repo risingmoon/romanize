@@ -21,7 +21,7 @@ chars = {
     1: 'I',
     5: 'V',
     10: 'X',
-    50: 'V',
+    50: 'L',
     100: 'C',
     500: 'D',
     1000: 'M'
@@ -42,7 +42,7 @@ def romanize(num):
         elif value == 5:
             text += (chars[unit * 5])
         elif value > 5 and value < 9:
-            text += (chars[unit * 5] + chars[unit] * value)
+            text += (chars[unit * 5] + chars[unit] * (value - 5))
         elif value == 9:
             text += (chars[unit] + chars[unit * 10])
     return text
