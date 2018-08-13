@@ -18,4 +18,8 @@
 # 4, 5, 9
 
 def romanize(num):
-    pass
+    for index, value in enumerate(str(num)):
+        print(index, value)
+
+
+romanize(3000)
