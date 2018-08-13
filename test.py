@@ -17,3 +17,6 @@ class RomanizeTestCase(unittest.TestCase):
 
     def test_romanize_when_input_is_1994_returns_MCMXCIV(self):
         pass
+
+if __name__ == '__main__':
+    unittest.main()
