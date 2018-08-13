@@ -9,16 +9,16 @@ class RomanizeTestCase(unittest.TestCase):
         self.assertEqual(romanize(3), 'III')
 
     def test_romanize_when_input_is_4_returns_IV(self):
-        pass
+        self.assertEqual(romanize(4), 'IV')
 
     def test_romanize_when_input_is_9_returns_IX(self):
-        pass
+        self.assertEqual(romanize(9), 'IX')
 
     def test_romanize_when_input_is_58_returns_LVIII(self):
-        pass
+        self.assertEqual(romanize(58), 'LVIII')
 
     def test_romanize_when_input_is_1994_returns_MCMXCIV(self):
-        pass
+        self.assertEqual(romanize(1994), 'MCMXCIV')
 
 
 if __name__ == '__main__':
