@@ -58,3 +58,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4
 ```
 python test.py
 ```
+
+### Run Coderpad
+
+Instruction: copy romanize.py and click on the "Run" button to run the function
