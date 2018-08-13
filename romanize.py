@@ -34,20 +34,13 @@ def romanize(num):
         unit = 10 ** (3 - index)
         value = int(value_string)
         if value > 0 and value < 4:
-            print('Less than 4')
-            print(chars[unit] * value)
+            text += (chars[unit] * value)
         elif value == 4:
-            print('Four')
-            print(chars[unit] + chars[unit * 5])
+            text += (chars[unit] + chars[unit * 5])
         elif value == 5:
-            print('Five')
-            print(chars[unit * 5])
+            text += (chars[unit * 5])
         elif value > 5 and value < 9:
-            print('Less than 9')
-            print(chars[unit * 5] + chars[unit] * value)
+            text += (chars[unit * 5] + chars[unit] * value)
         elif value == 9:
-            print('Nine')
-            print(chars[unit] + chars[unit * 10])
-
-
-romanize(3945)
+            text += (chars[unit] + chars[unit * 10])
+    return text
