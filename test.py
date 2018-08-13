@@ -20,13 +20,19 @@ class RomanizeTestCase(unittest.TestCase):
     def test_romanize_when_input_is_1994_returns_MCMXCIV(self):
         self.assertEqual(romanize(1994), 'MCMXCIV')
 
-    def test_romanize_when_input_is_less_than_1_returns_assertion_error(self):
+    def test_romanize_when_input_is_less_than_1_raises_assertion_error(self):
         with self.assertRaises(AssertionError):
             romanize(0)
 
-    def test_romanize_when_input_is_more_than_3999_returns_assertion_error(self):
+    def test_romanize_when_input_is_more_than_3999_raises_assertion_error(self):
         with self.assertRaises(AssertionError):
             romanize(4000)
+
+    def test_romanize_when_input_is_1_returns_I(self):
+        self.assertEqual(romanize(1), 'I')
+
+    def test_romanize_when_input_is_3999_returns_MMMCMXCIX(self):
+        self.assertEqual(romanize(3999), 'MMMCMXCIX')
 
 
 if __name__ == '__main__':
