@@ -29,6 +29,7 @@ chars = {
 
 
 def romanize(num):
+    assert num > 0
     text = ''
     num_string = str(num)
     length = len(num_string) - 1
