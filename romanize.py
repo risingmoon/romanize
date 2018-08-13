@@ -17,6 +17,17 @@
 # step: exceptions:
 # 4, 5, 9
 
+chars = {
+    1: 'I',
+    5: 'V',
+    10: 'X',
+    50: 'V',
+    100: 'C',
+    500: 'D',
+    1000: 'M'
+}
+
+
 def romanize(num):
     for index, value in enumerate(str(num)):
         unit = 10 ** (3 - index)
