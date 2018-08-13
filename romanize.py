@@ -30,8 +30,10 @@ chars = {
 
 def romanize(num):
     text = ''
-    for index, value_string in enumerate(str(num)):
-        unit = 10 ** (3 - index)
+    num_string = str(num)
+    length = len(num_string) - 1
+    for index, value_string in enumerate(num_string):
+        unit = 10 ** (length - index)
         value = int(value_string)
         if value > 0 and value < 4:
             text += (chars[unit] * value)
