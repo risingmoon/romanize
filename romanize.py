@@ -29,9 +29,19 @@ chars = {
 
 
 def romanize(num):
-    for index, value in enumerate(str(num)):
+    for index, value_string in enumerate(str(num)):
         unit = 10 ** (3 - index)
-        print(unit, value)
+        value = int(value_string)
+        if value > 0 and value < 4:
+            print('Less than 4')
+        elif value == 4:
+            print('Four')
+        elif value == 5:
+            print('Five')
+        elif value > 5 and value < 9:
+            print('Less than 9')
+        elif value == 9:
+            print('Nine')
 
 
 romanize(3000)
