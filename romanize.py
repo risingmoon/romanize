@@ -49,3 +49,10 @@ def romanize(num):
         elif value == 9:
             text += (chars[unit] + chars[unit * 10])
     return text
+
+
+print(romanize(3))
+print(romanize(4))
+print(romanize(9))
+print(romanize(58))
+print(romanize(1994))
