@@ -24,6 +24,10 @@ class RomanizeTestCase(unittest.TestCase):
         with self.assertRaises(AssertionError):
             romanize(0)
 
+    def test_romanize_when_input_is_more_than_3999_returns_assertion_error(self):
+        with self.assertRaises(AssertionError):
+            romanize(4000)
+
 
 if __name__ == '__main__':
     unittest.main()
