@@ -29,6 +29,7 @@ chars = {
 
 
 def romanize(num):
+    assert type(num) == int
     assert num > 0
     assert num < 4000
     text = ''

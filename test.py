@@ -34,6 +34,10 @@ class RomanizeTestCase(unittest.TestCase):
     def test_romanize_when_input_is_3999_returns_MMMCMXCIX(self):
         self.assertEqual(romanize(3999), 'MMMCMXCIX')
 
+    def test_romanize_when_input_is_string_raises_assertion_error(self):
+        with self.assertRaises(AssertionError):
+            self.assertEqual(romanize("123"))
+
 
 if __name__ == '__main__':
     unittest.main()
